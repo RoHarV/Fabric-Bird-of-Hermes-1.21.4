@@ -12,6 +12,8 @@ import net.minecraft.registry.Registry;
 
 public class ModItems {
     public static final Item HOLY_BLOOD = registerItem("holy_blood", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"holy_blood")))));
+    public static final Item BLOOD_BAG = registerItem("blood_bag", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"blood_bag")))));
+    public static final Item SYRINGE = registerItem("syringe", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"syringe")))));
 
 
     private static Item registerItem(String name, Item item) {
@@ -23,6 +25,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(HOLY_BLOOD);
+            entries.add(BLOOD_BAG);
+            entries.add(SYRINGE);
         });
     }
 }
