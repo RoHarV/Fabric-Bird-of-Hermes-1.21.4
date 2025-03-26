@@ -1,0 +1,7 @@
+{
+  "model":{
+    "type": "minecraft:model",
+    "model": "birdofhermes:item/diamond_wire"
+  }
+
+}

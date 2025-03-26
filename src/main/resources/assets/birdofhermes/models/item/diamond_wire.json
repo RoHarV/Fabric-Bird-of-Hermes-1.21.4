@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "birdofhermes:item/diamond_wire"
+  }
+}

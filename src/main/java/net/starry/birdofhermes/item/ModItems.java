@@ -14,6 +14,8 @@ public class ModItems {
     public static final Item HOLY_BLOOD = registerItem("holy_blood", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"holy_blood")))));
     public static final Item BLOOD_BAG = registerItem("blood_bag", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"blood_bag")))));
     public static final Item SYRINGE = registerItem("syringe", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"syringe")))));
+    public static final Item BLOOD = registerItem("blood", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"blood")))));
+    public static final Item DIAMOND_WIRE = registerItem("diamond_wire", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BirdOfHermes.MOD_ID,"diamond_wire")))));
 
 
     private static Item registerItem(String name, Item item) {
@@ -27,6 +29,8 @@ public class ModItems {
             entries.add(HOLY_BLOOD);
             entries.add(BLOOD_BAG);
             entries.add(SYRINGE);
+            entries.add(BLOOD);
+            entries.add(DIAMOND_WIRE);
         });
     }
 }
